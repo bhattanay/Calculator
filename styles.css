@@ -1,8 +1,61 @@
-#buttons {
+#nums {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    background-color: beige;
+    border: 1px solid black;
+    cursor: pointer;
+}
 
+#nums :hover {
+    background-color: rgb(159, 140, 118);
+}
 
+#textBox {
+    background-color: mediumpurple;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+}
 
+#txtBoxDiv {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 100px;
+    scale: 1.5;
+}
+
+#ops {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#ops :hover {
+    background-color: lightgrey;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-spacing: 1px;
+}
+
+#openPara :hover{
+    background-color: lightgray;
+}
+
+#closePara :hover{
+    background-color: lightgrey;
 }

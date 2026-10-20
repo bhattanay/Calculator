@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
     <title>CALCULATOR OF DOOM</title>
 </head>
 <body>
 
     <div id="calculator">
+        <div id="txtBoxDiv"><input type="text" id="textBox"></div>
         <div id="buttons">
-            <p>nine</p>
-            <p>eight</p>
-            <p>seven</p>
-            <p>six</p>
-            <p>five</p>
-            <p>four</p>
-            <p>three</p>
-            <p>two</p>
-            <p>one</p>
-            <p>zero</p>
-            <p>(</p>
-            <p>)</p>
+            <div id="nums">
+                <p onclick="anyButtonPress('9')">nine</p>
+                <p onclick="anyButtonPress(8)">eight</p>
+                <p onclick="anyButtonPress(7)">seven</p>
+                <p onclick="anyButtonPress(6)">six</p>
+                <p onclick="anyButtonPress(5)">five</p>
+                <p onclick="anyButtonPress(4)">four</p>
+                <p onclick="anyButtonPress(3)">three</p>
+                <p onclick="anyButtonPress(2)">two</p>
+                <p onclick="anyButtonPress(1)">one</p>
+                <p onclick="anyButtonPress(0)">zero</p>
+                <p id="openPara" style="background-color: white; margin-bottom: 0;">(</p>
+                <p id="closePara" style="background-color: white; margin-bottom: 0;">)</p>
+            </div>
+            <div id="ops">
+                <p onclick="anyButtonPress('+')">plus</p>
+                <p>minus</p>
+                <p>mult.</p>
+                <p>divide</p>
+                <p>exp.</p>
+                <p>mod</p>
+            </div>
 <!--            <table>-->
 <!--                <tr>-->
 <!--                    <td>-->
