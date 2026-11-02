@@ -6,32 +6,42 @@
     <script src="index.js"></script>
     <title>CALCULATOR OF DOOM</title>
 </head>
-<body>
+<body onload="pageLoad()">
 
     <div id="calculator">
-        <div id="txtBoxDiv"><input type="text" id="textBox"></div>
+        <div id="topButtons">
+            <div onclick="ascent()" id="desButton"><p>DESCENT</p></div>
+            <div id="txtBoxDiv"><input type="text" id="textBox"></div>
+            <div id="ansBoxDiv"><input type="text" id="answerBox" readonly></div>
+            <div onclick="descent()" id="ascButton"><p>ASCENT</p></div>
+        </div>
         <div id="buttons">
             <div id="nums">
-                <p onclick="anyButtonPress('9')">nine</p>
-                <p onclick="anyButtonPress(8)">eight</p>
-                <p onclick="anyButtonPress(7)">seven</p>
-                <p onclick="anyButtonPress(6)">six</p>
-                <p onclick="anyButtonPress(5)">five</p>
-                <p onclick="anyButtonPress(4)">four</p>
-                <p onclick="anyButtonPress(3)">three</p>
-                <p onclick="anyButtonPress(2)">two</p>
-                <p onclick="anyButtonPress(1)">one</p>
-                <p onclick="anyButtonPress(0)">zero</p>
-                <p id="openPara" style="background-color: white; margin-bottom: 0;">(</p>
-                <p id="closePara" style="background-color: white; margin-bottom: 0;">)</p>
+                <p onclick="anyButtonPress('9')" style="padding: 15px; width: 40px">9</p>
+                <p onclick="anyButtonPress(8)" style="padding: 15px; width: 40px">8</p>
+                <p onclick="anyButtonPress(7)" style="padding: 15px; width: 40px">7</p>
+                <p onclick="anyButtonPress(6)" style="padding: 15px; width: 40px">6</p>
+                <p onclick="anyButtonPress(5)" style="padding: 15px; width: 40px">5</p>
+                <p onclick="anyButtonPress(4)" style="padding: 15px; width: 40px">4</p>
+                <p onclick="anyButtonPress(3)" style="padding: 15px; width: 40px">3</p>
+                <p onclick="anyButtonPress(2)" style="padding: 15px; width: 40px">2</p>
+                <p onclick="anyButtonPress(1)" style="padding: 15px; width: 40px">1</p>
+                <p onclick="anyButtonPress(0)" style="padding: 15px; width: 40px">0</p>
+                <p onclick="anyButtonPress('.')" style="padding: 15px; width: 40px">.</P>
+
+
             </div>
             <div id="ops">
-                <p onclick="anyButtonPress('+')">plus</p>
-                <p>minus</p>
-                <p>mult.</p>
-                <p>divide</p>
-                <p>exp.</p>
-                <p>mod</p>
+                <p onclick="anyButtonPress('+')" style="padding: 15px">+</p>
+                <p onclick="anyButtonPress('-')" style="padding: 15px">-</p>
+                <p onclick="anyButtonPress('*')" style="padding: 15px">*</p>
+                <p onclick="anyButtonPress('/')" style="padding: 15px">/</p>
+                <p onclick="anyButtonPress('**')" style="padding: 15px">^</p>
+                <p onclick="anyButtonPress('%')" style="padding: 15px">%</p>
+                <p onclick="anyButtonPress('(')" style="padding: 15px" id="openPara">(</p>
+                <p onclick="anyButtonPress(')')" style="padding: 15px" id="closePara">)</p>
+                <p onclick="EXECUTION()" id="exec">EXECUTION</p>
+                <p onclick="cleartxt()" id="clr">PURIFY</p>
             </div>
 <!--            <table>-->
 <!--                <tr>-->

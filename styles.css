@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
-    width: 50%;
+    width: 25%;
     text-align: center;
     margin: auto;
     background-color: beige;
@@ -16,31 +16,32 @@
 
 #textBox {
     background-color: mediumpurple;
-    display: flex;
     justify-content: center;
     align-self: center;
-    margin: auto;
+    margin: 20px;
+    border: 2px black solid;
 }
 
-#txtBoxDiv {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    height: 100px;
-    scale: 1.5;
-}
+/*#txtBoxDiv {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-self: center;*/
+/*    height: 100px;*/
+/*    scale: 1.5;*/
+/*}*/
 
 #ops {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
-    width: 100%;
+    width: 25%;
     text-align: center;
     background-color: white;
-    margin: auto;
     border: 1px solid black;
     cursor: pointer;
+    margin: auto;
 }
+
 
 #ops :hover {
     background-color: lightgrey;
@@ -49,6 +50,23 @@
 #buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+#openPara {
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#closePara {
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    display: flex;
     border-spacing: 1px;
 }
 
@@ -58,4 +76,48 @@
 
 #closePara :hover{
     background-color: lightgrey;
+}
+
+#topButtons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    align-items: center;
+}
+
+#ascButton {
+    background-color: gold;
+    text-align: center;
+    color: black;
+    border: black solid 1px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#desButton {
+    background-color: darkred;
+    text-align: center;
+    color: white;
+    border: black solid 1px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#answerBox {
+    margin: 20px;
+    background-color: mediumpurple;
+    border: 2px solid black;
+}
+
+#exec {
+    justify-content: center;
+    align-content: center;
+    padding: 10px
+}
+
+#clr {
+    justify-content: center;
+    align-content: center;
+    padding: 10px
 }
